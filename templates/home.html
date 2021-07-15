@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Field test FullStack</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'csv/stylesheets/bootstrap.min.css' %}" type="text/css"/>
+    <link rel="stylesheet" href="{% static 'csv/stylesheets/jquery.dataTables.css' %}" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Field test FullStack</h1>
+    </div>
+    <!-- datatables -->
+    <table id="datatables" class="table table-hover">
+        <thead>
+        <tr>
+            <th>id</th>
+            <th>source_ip</th>
+            <th>source_port</th>
+            <th>destination_ip</th>
+            <th>destination_port</th>
+            <th>dns_record</th>
+            <th>datetime_record</th>
+        </tr>
+        </thead>
+        <tfoot>
+        <tr>
+
+        </tr>
+        </tfoot>
+    </table>
+
+
+</div>
+<script src="{% static 'csv/js/jquery.min.js' %}"></script>
+<script src="{% static 'csv/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'csv/js/jquery.dataTables.js' %}"></script>
+<script src="{% static 'csv/js/index.js' %}"></script>
+</body>
+</html>
